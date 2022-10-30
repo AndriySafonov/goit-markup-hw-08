@@ -1,6 +1,37 @@
 .site-nav {
   margin-left: 93px;
 }
+.menu {
+  display: inline-flex;
+  background-color: var(--primary-light-color);
+}
+.menu .menu__icon-close {
+  display: none;
+}
+.menu.is-open .menu__icon-close {
+  display: block;
+}
+.menu.is-open .menu__icon-menu {
+  display: none;
+}
+.menu__conteiner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: aqua;
+  padding: 20px;
+  text-align: center;
+  font-style: 20px;
+  &.is-open {
+    display: block;
+  }
+}
+
+.menu__icon-menu {
+}
 .site-nav__list {
   display: flex;
 }
