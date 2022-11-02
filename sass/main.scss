@@ -1,23 +1,7 @@
-@import './utils/variables';
-@import './utils/breakpoints';
-@import './utils/placeholders';
-@import './utils/hidden';
+@import './utils/utils';
 
-@import './base/reset';
-@import './base/common';
+@import './base/base';
 
-@import './components/conteiner.scss';
-@import './components/section.scss';
-@import './components/logo.scss';
-@import './components/navigation.scss';
-@import './components/authorization';
-@import './components/modal';
+@import './components/components';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/advantages';
-@import './layout/features';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/portfolio';
-@import './layout/footer';
+@import './layout/layout';
