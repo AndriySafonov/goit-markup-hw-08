@@ -1,6 +1,6 @@
 .features {
   padding-top: 0;
-  @media screen and (max-width: 767px) {
+  @include desktop-only {
     display: none;
   }
 }
