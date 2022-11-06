@@ -124,7 +124,6 @@
     background-color: var(--accent);
   }
   &__subscription {
-    // margin-left: auto;
     margin-top: 60px;
     @include tablet {
       display: flex;
@@ -133,7 +132,7 @@
     }
     @include desktop {
       margin: 0;
-      margin-left: 93px;
+      margin-left: auto;
       align-items: flex-start;
     }
   }

@@ -1004,7 +1004,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__subscription {
     margin: 0;
-    margin-left: 93px;
+    margin-left: auto;
     align-items: flex-start;
   }
 }
