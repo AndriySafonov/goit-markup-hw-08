@@ -28,11 +28,19 @@
   }
 }
 
-// @mixin mobile {
-//   @media screen and (min-width: 320px) {
-//     @content;
-//   }
-// }
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: 479px) {
+    @content;
+  }
+}
 
 // вызов mixin-a
 // .any-class {
