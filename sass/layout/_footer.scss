@@ -6,16 +6,17 @@
       display: flex;
     }
   }
+
   &__tablet-conteiner {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
     }
+
     @include desktop {
       flex-direction: row;
       justify-content: left;
