@@ -1,30 +1,105 @@
-.menu {
-  display: inline-flex;
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  padding: 48px 0 48px 25px;
   background-color: var(--primary-light-color);
-}
-.menu .menu__icon-close {
-  display: none;
-}
-.menu.is-open .menu__icon-close {
-  display: block;
-}
-.menu.is-open .menu__icon-menu {
-  display: none;
-}
-.menu__conteiner {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  background-color: aqua;
-  padding: 20px;
-  text-align: center;
-  font-style: 20px;
-  &.is-open {
-    display: block;
+  transition: opacity 300ms linear, visibility 300ms linear;
+  > .conteiner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  @include mobile-only {
+    padding: 48px 0;
+  }
+  &__conteier {
+    display: flex;
+    align-items: center;
+    min-width: 290px;
+    height: 60px;
+  }
+  &__btn-open {
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__btn-close {
+    position: absolute;
+    margin-left: auto;
+    background-color: transparent;
+    padding: 0;
+    top: 10px;
+    right: 15px;
+  }
+  &__icon-close:hover,
+  &__icon-close:focus {
+    fill: var(--accent);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
   }
 }
-.menu__icon-menu {
+.mob-connect {
+  margin-bottom: 64px;
+  &__mail {
+    display: inline-block;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    @include mobile-only {
+      font-size: 30px;
+    }
+  }
+  &__tel {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+  }
+}
+
+.mob-soc {
+  display: flex;
+  &__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__item:not(:first-child) {
+    padding-left: 10px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    @include mobile-only {
+      font-size: 14px;
+    }
+  }
 }

@@ -6,7 +6,6 @@
       display: flex;
     }
   }
-
   &__tablet-conteiner {
     display: flex;
     align-items: center;
@@ -16,7 +15,6 @@
       flex-direction: row;
       justify-content: space-between;
     }
-
     @include desktop {
       flex-direction: row;
       justify-content: left;
@@ -35,12 +33,9 @@
       align-items: flex-start;
     }
   }
-
   &__address {
     margin-top: 20px;
     font-style: normal;
-  }
-  &__list {
   }
   &__item {
     text-align: center;
@@ -81,7 +76,7 @@
     color: var(--accent);
   }
   &__soc-content {
-    @include mobile-only {
+    @include up-to-tablet {
       margin-top: 60px;
     }
     @include tablet-only {
@@ -102,8 +97,6 @@
     @include desktop {
       text-align: left;
     }
-  }
-  &__soc-item {
   }
   &__soc-link {
     width: 44px;
@@ -160,8 +153,6 @@
       display: flex;
       align-items: baseline;
     }
-  }
-  &__label {
   }
   &__input {
     width: 100%;

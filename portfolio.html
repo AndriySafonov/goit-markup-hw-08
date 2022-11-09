@@ -21,49 +21,121 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!------------ HEADER ------------->
+    <!------------ HEADER  ------------>
 
     <header class="header">
       <div class="conteiner">
-        <!------------ logo ------------->
-        <a class="logo link" href="./index.html"
-          ><span class="logo__akcent">Web</span>Studio</a
-        >
-        <!------------ site navigation ------------->
-        <nav class="site-nav">
-          <ul class="site-nav__list list">
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="./index.html">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link current" href="./portfolio.html"
-                >Портфоліо</a
+        <!------------ mobile menu ------------>
+        <div class="mob-menu__conteier">
+          <a class="logo link" href="./index.html"
+            ><span class="logo__akcent">Web</span>Studio</a
+          >
+          <nav class="site-nav">
+            <ul class="site-nav__list list">
+              <li class="site-nav__item">
+                <a class="site-nav__link link" href="./index.html">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link link current site-nav__link—-current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth list">
+            <li>
+              <a class="auth__mail link" href="mailto:info@devstudio.com">
+                <svg class="auth__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="">Контакти</a>
+            <li>
+              <a class="auth__tel link" href="tel:+380961111111">
+                <svg class="auth__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!------------ authorization ------------->
-        <ul class="auth list">
-          <li>
-            <a class="auth__mail link" href="mailto:info@devstudio.com">
-              <svg class="auth__icon" width="16" height="12">
-                <use href="./images/sprite.svg#icon-envelope"></use>
+
+          <!------------ MOBILE MENU ------------>
+
+          <button type="button" class="mob-menu__btn-open" data-menu-open>
+            <svg width="40" height="40">
+              <use
+                class="mob-menu__icon"
+                href="./images/sprite.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="conteiner">
+          <div class="mob-menu__top">
+            <button type="button" class="mob-menu__btn-close" data-menu-close>
+              <svg width="24" height="24">
+                <use
+                  class="mob-menu__icon-close"
+                  href="./images/sprite.svg#icon-close"
+                ></use>
               </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="auth__tel link" href="tel:+380961111111">
-              <svg class="auth__icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-connect list">
+              <li>
+                <a
+                  class="mob-connect__mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mob-connect__tel link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a class="mob-soc__link link" href="">Instagram</a>
+              </li>
+              <li class="mob-soc__item">
+                <a class="mob-soc__link link" href="">Twitter</a>
+              </li>
+              <li class="mob-soc__item">
+                <a class="mob-soc__link link" href="">Facebook</a>
+              </li>
+              <li class="mob-soc__item">
+                <a class="mob-soc__link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 

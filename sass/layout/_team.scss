@@ -34,9 +34,6 @@
       width: calc((100% - 90px) / 4);
     }
   }
-  // .team__item:nth-child(n + 2) {
-  //   margin-left: 30px;
-  // }
   &__item-content {
     padding: 30px 32px;
   }
@@ -58,8 +55,6 @@
     margin-top: 16px;
     gap: 10px;
     justify-content: center;
-  }
-  &__soc-item {
   }
   &__soc-link {
     width: 44px;

@@ -1,42 +1,47 @@
 .auth {
   display: flex;
+  flex-direction: column;
   margin-left: auto;
-  gap: 50px;
-  @include tablet {
+  gap: 10px;
+  @include up-to-tablet {
     display: none;
   }
-}
-.auth__mail {
-  @extend %align-list;
-  gap: 10px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.auth__icon {
-  fill: currentColor;
-}
-.auth__tel {
-  @extend %align-list;
-  gap: 10px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.auth__icon {
-  fill: currentColor;
-}
-.auth__mail:hover,
-.auth__mail:focus,
-.auth__tel:hover,
-.auth__tel:focus {
-  color: var(--accent);
+  @include desktop {
+    gap: 50px;
+    flex-direction: row;
+  }
+  .auth__mail {
+    @extend %align-list;
+    gap: 10px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  &__tel {
+    @extend %align-list;
+    gap: 10px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  .auth__mail:hover,
+  .auth__mail:focus,
+  .auth__tel:hover,
+  .auth__tel:focus {
+    color: var(--accent);
+  }
 }
