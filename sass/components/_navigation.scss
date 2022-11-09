@@ -35,8 +35,8 @@
     border-radius: 2px;
     background-color: var(--accent);
   }
-  .site-nav__link:hover,
-  .site-nav__link:focus {
+  &__link:hover,
+  &__link:focus {
     color: var(--accent);
   }
 }
