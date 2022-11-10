@@ -59,6 +59,9 @@
     letter-spacing: 0.02em;
     color: var(--primary-color);
   }
+  &__link.current {
+    color: var(--accent);
+  }
 }
 .mob-connect {
   margin-bottom: 64px;
