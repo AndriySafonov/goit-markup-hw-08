@@ -24,7 +24,7 @@
   &__link.site-nav__link—-current {
     color: var(--accent);
   }
-  .current&__link::after {
+  .current.site-nav__link::after {
     position: absolute;
     left: 0;
     bottom: 0;
