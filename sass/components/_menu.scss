@@ -6,6 +6,8 @@
   z-index: 999;
   padding: 48px 0 48px 25px;
   background-color: var(--primary-light-color);
+  // transform: translateX(0);
+  // transition: transform 250ms ease-in-out;
   > .conteiner {
     height: 100%;
     display: flex;
@@ -101,4 +103,5 @@
 }
 .mob-menu.is-hidden {
   display: none;
+  // transform: translateX(100%);
 }
