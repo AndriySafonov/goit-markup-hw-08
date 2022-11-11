@@ -6,7 +6,6 @@
   z-index: 999;
   padding: 48px 0 48px 25px;
   background-color: var(--primary-light-color);
-  transition: opacity 300ms linear, visibility 300ms linear;
   > .conteiner {
     height: 100%;
     display: flex;
@@ -16,12 +15,6 @@
   }
   @include mobile-only {
     padding: 48px 0;
-  }
-  &__conteier {
-    display: flex;
-    align-items: center;
-    min-width: 290px;
-    height: 60px;
   }
   &__btn-open {
     margin-left: auto;
