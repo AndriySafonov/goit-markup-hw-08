@@ -8,6 +8,9 @@
   @include tablet-only {
     margin-bottom: 30px;
   }
+  @include up-to-tablet {
+    justify-content: flex-start;
+  }
 }
 .portfolio__buttons-btn {
   padding: 6px 22px;
@@ -42,14 +45,12 @@
   flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio__item {
-  width: 370px;
   margin: 15px;
-  @include mobile-only {
-    margin: 15px auto;
-    min-width: 290px;
-  }
   @include tablet-only {
     flex-basis: calc((100% - 60px) / 2);
+  }
+  @include desktop {
+    width: 370px;
   }
 }
 .portfolio__link {

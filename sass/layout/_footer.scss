@@ -139,6 +139,7 @@
     text-align: center;
     @include desktop {
       margin-top: 12px;
+      text-align: left;
     }
   }
   &__soc-list {
